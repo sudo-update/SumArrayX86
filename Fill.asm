@@ -39,7 +39,8 @@
 ;  Status: Finished.
 ;  The program was tested extensively with no errors in (Tuffix) Ubuntu 20.04
 ;Purpose
-;  This program will take the starting address of an array as its parameter, and
+;  This program will take the starting address of an array as its first
+;  parameter, the maximum size of said array as its second parameter, and then
 ;  will fill the array with values read from the standard input device.  It will
 ;  return the number of elements that were filled into the array.  This program
 ;  will also be submit (for credit) for an assignment conducted during my
@@ -91,7 +92,7 @@ pushf
 ;                                                                     BEGIN CODE
 ;------------------------------------------------------------------------------;
 ;------------------------------------------------------------------------------;
-;parameter: address of the array to Fill
+;parameters: address of the array to Fill, maximum length of array to fill
 mov r15, rdi                            ;r15 holds starting address of the array
 mov r13, rsi                              ;r13 holds the max length of the array
 sub rsp, 24
